@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "question": "¿Cuál es la modalidad de cursada?",
+    "answer": "Podés cursar en modalidad 100% virtual o presencial, según tu disponibilidad. Las clases virtuales quedan grabadas para que puedas repasarlas cuando quieras."
+  },
+  {
+    "id": 2,
+    "question": "¿Cuál es el método de enseñanza?",
+    "answer": "Nuestro enfoque es práctico y progresivo. Aprendés haciendo, con proyectos reales, acompañamiento constante y material actualizado a los estándares de la industria."
+  },
+  {
+    "id": 3,
+    "question": "¿Puedo pagar en cuotas sin interés?",
+    "answer": "Sí, contamos con planes de pago en cuotas sin interés y diferentes opciones para que elijas la que mejor se adapte a vos."
+  },
+  {
+    "id": 4,
+    "question": "¿Puedo conseguir empleo con SkillUp?",
+    "answer": "Nuestro objetivo es prepararte para el mundo laboral. Al finalizar el curso contarás con conocimientos sólidos, proyectos para tu portfolio y orientación para insertarte en el mercado IT."
+  },
+  {
+    "id": 5,
+    "question": "¿Qué pasa si no apruebo el curso?",
+    "answer": "No te dejamos solo. Podés reintentar las evaluaciones hasta 3 veces y, si lo necesitás, acceder a una recursada gratuita para reforzar los contenidos."
+  }
+]

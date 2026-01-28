@@ -1,0 +1,23 @@
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.page {
+    padding: .8rem 1rem;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.hover {
+    &:hover {
+        background-color: rgba(40, 89, 212, 0.1);
+    }
+}
+
+.current {
+    background-color: #1173d4;
+}

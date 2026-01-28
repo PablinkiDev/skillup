@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "nombre": "Frontend Developer",
+    "empresa": "NovaLabs",
+    "modalidad": "Remoto",
+    "nivelExperiencia": "Junior",
+    "tecnologia": ["JS", "HTML", "CSS", "REACT"],
+    "descripcion": "Construcción de interfaces responsive, mantenimiento de componentes reutilizables y consumo de APIs. Se valora prolijidad en estilos y buenas prácticas."
+  },
+  {
+    "id": 2,
+    "nombre": "Backend Developer",
+    "empresa": "AndesTech",
+    "modalidad": "Híbrido",
+    "nivelExperiencia": "Semi Senior",
+    "tecnologia": ["NODEJS", "JS"],
+    "descripcion": "Desarrollo de APIs y lógica de negocio, integración con servicios y mejoras de performance. Participación en code reviews y documentación técnica."
+  },
+  {
+    "id": 3,
+    "nombre": "Full Stack Developer",
+    "empresa": "SkillBridge",
+    "modalidad": "Presencial",
+    "nivelExperiencia": "Senior",
+    "tecnologia": ["REACT", "NODEJS", "JS", "HTML", "CSS"],
+    "descripcion": "Liderar features end-to-end, definir estándares del equipo y acompañar con mentoring. Enfoque en calidad, escalabilidad y experiencia de usuario."
+  },
+  {
+    "id": 4,
+    "nombre": "C# Developer",
+    "empresa": "PampaSoft",
+    "modalidad": "Remoto",
+    "nivelExperiencia": "Junior",
+    "tecnologia": ["C#"],
+    "descripcion": "Desarrollo y mantenimiento de funcionalidades en aplicaciones internas. Se valora escritura de código limpio, buenas prácticas y ganas de aprender."
+  },
+  {
+    "id": 5,
+    "nombre": "Java Developer",
+    "empresa": "BairesCore",
+    "modalidad": "Híbrido",
+    "nivelExperiencia": "Semi Senior",
+    "tecnologia": ["JAVA"],
+    "descripcion": "Implementación de servicios backend, mejoras continuas del sistema y resolución de incidentes. Trabajo en equipo con foco en estabilidad."
+  },
+  {
+    "id": 6,
+    "nombre": "Python Developer",
+    "empresa": "DeltaAI",
+    "modalidad": "Remoto",
+    "nivelExperiencia": "Semi Senior",
+    "tecnologia": ["PYTHON"],
+    "descripcion": "Desarrollo de servicios y automatizaciones, integración con APIs y mantenimiento de scripts. Se valora capacidad de análisis y documentación."
+  },
+  {
+    "id": 7,
+    "nombre": "Go Developer",
+    "empresa": "CloudMate",
+    "modalidad": "Remoto",
+    "nivelExperiencia": "Senior",
+    "tecnologia": ["GO"],
+    "descripcion": "Construcción de servicios de alto rendimiento, optimización y diseño de soluciones escalables. Enfoque en concurrencia y buenas prácticas."
+  },
+  {
+    "id": 8,
+    "nombre": "Ruby Developer",
+    "empresa": "Estudio Lumen",
+    "modalidad": "Presencial",
+    "nivelExperiencia": "Junior",
+    "tecnologia": ["RUBY"],
+    "descripcion": "Soporte y desarrollo de funcionalidades en aplicaciones web. Se valora atención al detalle y predisposición para aprender procesos del equipo."
+  },
+  {
+    "id": 9,
+    "nombre": "Frontend UI Developer",
+    "empresa": "MateApp",
+    "modalidad": "Híbrido",
+    "nivelExperiencia": "Semi Senior",
+    "tecnologia": ["HTML", "CSS", "JS"],
+    "descripcion": "Maquetado y mejoras de UI, implementación de componentes y optimización de estilos. Colaboración con diseño para mantener consistencia visual."
+  },
+  {
+    "id": 10,
+    "nombre": "Backend Developer Node + React",
+    "empresa": "RíoData",
+    "modalidad": "Remoto",
+    "nivelExperiencia": "Senior",
+    "tecnologia": ["NODEJS", "REACT", "JS"],
+    "descripcion": "Construcción de APIs y paneles internos, definición de arquitectura y mejoras de performance. Coordinación técnica y revisión de código."
+  },
+  {
+    "id": 11,
+    "nombre": "React Frontend Developer",
+    "empresa": "Aconcagua Digital",
+    "modalidad": "Remoto",
+    "nivelExperiencia": "Semi Senior",
+    "tecnologia": ["REACT", "JS", "HTML", "CSS"],
+    "descripcion": "Implementación de features en React, optimización de renderizados y construcción de UI mantenible. Trabajo en conjunto con diseño y backend para entregar funcionalidades completas."
+  },
+  {
+    "id": 12,
+    "nombre": "Node.js Backend Developer",
+    "empresa": "Patagonia Systems",
+    "modalidad": "Híbrido",
+    "nivelExperiencia": "Junior",
+    "tecnologia": ["NODEJS", "JS"],
+    "descripcion": "Desarrollo de endpoints REST, validaciones y manejo de errores. Participación en tareas de testing básico, documentación y soporte de servicios existentes."
+  },
+  {
+    "id": 13,
+    "nombre": "Full Stack Developer React + Node",
+    "empresa": "SurCode",
+    "modalidad": "Remoto",
+    "nivelExperiencia": "Semi Senior",
+    "tecnologia": ["REACT", "NODEJS", "JS", "HTML", "CSS"],
+    "descripcion": "Construcción de funcionalidades end-to-end: UI, APIs y conexiones con servicios. Se valora criterio para priorizar, comunicación clara y enfoque en calidad."
+  },
+  {
+    "id": 14,
+    "nombre": "Python Backend Developer",
+    "empresa": "DataPampa",
+    "modalidad": "Presencial",
+    "nivelExperiencia": "Senior",
+    "tecnologia": ["PYTHON"],
+    "descripcion": "Diseño y mantenimiento de servicios, automatizaciones y procesos internos. Mejora de performance, observabilidad y buenas prácticas de desarrollo en equipo."
+  },
+  {
+    "id": 15,
+    "nombre": "C# .NET Developer",
+    "empresa": "LagunaTech",
+    "modalidad": "Híbrido",
+    "nivelExperiencia": "Senior",
+    "tecnologia": ["C#"],
+    "descripcion": "Evolución de servicios y aplicaciones internas, refactors y mejoras de arquitectura. Resolución de incidentes y definición de estándares técnicos junto al equipo."
+  },
+  {
+    "id": 16,
+    "nombre": "Java Backend Engineer",
+    "empresa": "CordobaWare",
+    "modalidad": "Remoto",
+    "nivelExperiencia": "Junior",
+    "tecnologia": ["JAVA"],
+    "descripcion": "Mantenimiento de servicios backend y desarrollo de nuevas funcionalidades bajo supervisión. Se valora prolijidad, responsabilidad y ganas de aprender buenas prácticas."
+  },
+  {
+    "id": 17,
+    "nombre": "Go Backend Developer",
+    "empresa": "ScaleRiver",
+    "modalidad": "Híbrido",
+    "nivelExperiencia": "Semi Senior",
+    "tecnologia": ["GO"],
+    "descripcion": "Implementación de microservicios en Go, optimización de performance y manejo de concurrencia. Trabajo con foco en estabilidad, métricas y escalabilidad."
+  },
+  {
+    "id": 18,
+    "nombre": "Ruby on Rails Developer",
+    "empresa": "Luna Studio",
+    "modalidad": "Remoto",
+    "nivelExperiencia": "Senior",
+    "tecnologia": ["RUBY"],
+    "descripcion": "Desarrollo de features en Rails, mejora de calidad del código y performance. Acompañamiento al equipo con revisiones, buenas prácticas y decisiones técnicas."
+  },
+  {
+    "id": 19,
+    "nombre": "Frontend Developer (HTML/CSS/JS)",
+    "empresa": "PixelSur",
+    "modalidad": "Presencial",
+    "nivelExperiencia": "Junior",
+    "tecnologia": ["HTML", "CSS", "JS"],
+    "descripcion": "Maquetado responsive, implementación de interacciones y mejora de accesibilidad. Se valora prolijidad, atención al detalle y consistencia visual."
+  },
+  {
+    "id": 20,
+    "nombre": "Tech Lead Full Stack",
+    "empresa": "NubeWorks",
+    "modalidad": "Remoto",
+    "nivelExperiencia": "Senior",
+    "tecnologia": ["REACT", "NODEJS", "JS", "HTML", "CSS"],
+    "descripcion": "Liderazgo técnico de features, definición de arquitectura y soporte al equipo con mentoring. Coordinación con stakeholders para asegurar entregas y calidad."
+  },
+  {
+    "id": 21,
+    "nombre": "Ruby Developer (Trainee)",
+    "empresa": "LumenRails",
+    "modalidad": "Presencial",
+    "nivelExperiencia": "Trainee",
+    "tecnologia": ["RUBY"],
+    "descripcion": "Soporte en desarrollo de features simples, corrección de bugs guiados y aprendizaje de flujo de trabajo con Git. Se valora curiosidad y constancia."
+  },
+  {
+    "id": 22,
+    "nombre": "Go Backend Developer (Trainee)",
+    "empresa": "PampaCloud",
+    "modalidad": "Remoto",
+    "nivelExperiencia": "Trainee",
+    "tecnologia": ["GO"],
+    "descripcion": "Implementación de tareas acotadas en microservicios, acompañamiento de un mentor y foco en buenas prácticas. Ideal para iniciar en backend de alto rendimiento."
+  },
+  {
+    "id": 23,
+    "nombre": "Java Developer (Trainee)",
+    "empresa": "SurBackend",
+    "modalidad": "Híbrido",
+    "nivelExperiencia": "Trainee",
+    "tecnologia": ["JAVA"],
+    "descripcion": "Participación en mantenimiento de servicios, desarrollo de endpoints básicos y aprendizaje de testing y documentación. Trabajo con revisiones y seguimiento."
+  },
+  {
+    "id": 24,
+    "nombre": "C# .NET Developer (Trainee)",
+    "empresa": "MateSoft",
+    "modalidad": "Presencial",
+    "nivelExperiencia": "Trainee",
+    "tecnologia": ["C#"],
+    "descripcion": "Soporte en desarrollo de módulos internos, tareas guiadas y corrección de incidencias simples. Se valora prolijidad y ganas de aprender."
+  },
+  {
+    "id": 25,
+    "nombre": "Ruby on Rails Developer",
+    "empresa": "AndesRails",
+    "modalidad": "Remoto",
+    "nivelExperiencia": "Semi Senior",
+    "tecnologia": ["RUBY"],
+    "descripcion": "Desarrollo de features en Rails, refactors y mejoras de performance. Participación en code reviews y decisiones técnicas con foco en calidad."
+  },
+  {
+    "id": 26,
+    "nombre": "Go Platform Engineer",
+    "empresa": "NubePatagonia",
+    "modalidad": "Híbrido",
+    "nivelExperiencia": "Senior",
+    "tecnologia": ["GO"],
+    "descripcion": "Diseño de servicios de plataforma, optimización de concurrencia y observabilidad. Definición de estándares, métricas y escalabilidad del sistema."
+  },
+  {
+    "id": 27,
+    "nombre": "Java Backend Engineer",
+    "empresa": "CórdobaCore",
+    "modalidad": "Presencial",
+    "nivelExperiencia": "Junior",
+    "tecnologia": ["JAVA"],
+    "descripcion": "Desarrollo y mantenimiento de servicios backend, resolución de bugs y mejoras incrementales. Trabajo en equipo con foco en estabilidad y buenas prácticas."
+  },
+  {
+    "id": 28,
+    "nombre": "C# Backend Developer",
+    "empresa": "RíoSystems",
+    "modalidad": "Remoto",
+    "nivelExperiencia": "Semi Senior",
+    "tecnologia": ["C#"],
+    "descripcion": "Evolución de APIs y servicios en .NET, mejoras de performance y mantenimiento de integraciones. Participación activa en revisiones de código."
+  },
+  {
+    "id": 29,
+    "nombre": "Ruby Developer (Mantenimiento)",
+    "empresa": "Estudio Álamo",
+    "modalidad": "Híbrido",
+    "nivelExperiencia": "Junior",
+    "tecnologia": ["RUBY"],
+    "descripcion": "Mantenimiento de aplicaciones existentes, corrección de incidencias y pequeñas mejoras. Se valora atención al detalle y aprendizaje continuo."
+  },
+  {
+    "id": 30,
+    "nombre": "Go Microservices Developer",
+    "empresa": "ScaleSur",
+    "modalidad": "Remoto",
+    "nivelExperiencia": "Semi Senior",
+    "tecnologia": ["GO"],
+    "descripcion": "Construcción y evolución de microservicios, optimización de performance y trabajo con métricas. Enfoque en estabilidad, escalabilidad y buenas prácticas."
+  }
+]

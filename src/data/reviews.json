@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "user": "Lucas Martínez",
+    "comment": "Excelente curso, los conceptos se explican de forma muy clara y con ejemplos reales que ayudan muchísimo a entender. Me sirvió para afianzar bases y ganar confianza programando.",
+    "course": "Desarrollador Full-Stack",
+    "date": "2025-10-12"
+  },
+  {
+    "id": 10,
+    "user": "Mariano Gómez",
+    "comment": "Muy buen contenido y bien organizado. Destaco especialmente la cantidad de práctica que tuvimos, lo cual hizo que los temas no queden solo en teoría.",
+    "course": "Programación Orientada a Objetos",
+    "date": "2025-11-03"
+  },
+  {
+    "id": 7,
+    "user": "Nahuel Pérez",
+    "comment": "Ideal para empezar desde cero. Las explicaciones son claras y progresivas, y me dio una base sólida para seguir aprendiendo y encarar cursos más avanzados.",
+    "course": "JavaScript Inicial",
+    "date": "2025-12-01"
+  }
+]

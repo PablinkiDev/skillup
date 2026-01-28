@@ -1,0 +1,25 @@
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+    gap: 3rem;
+}
+
+.jobsHeader {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.jobsHeader h1 {
+    font-size: 2.5rem;
+}
+
+.jobsHeader p {
+    color: gray;
+}
+

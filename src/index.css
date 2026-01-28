@@ -1,0 +1,782 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  list-style-type: none;
+  scroll-behavior: smooth;
+  scroll-margin-top: 100px;
+}
+
+body {
+  background-color: #01142c;
+  color: #fff;
+}
+
+.app-layout {
+  min-height: 100dvh;   
+  display: flex;
+  flex-direction: column;
+}
+
+.app-content {
+  flex: 1;            
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.error {
+  color: red;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem clamp(4rem, 8vw, 10rem) .5rem 4rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #021935;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.logo {
+  width: 62px;
+  height: 62px;
+  fill: #48e;
+}
+
+.logo-container span {
+  user-select: none;
+  font-size: 1.5rem;
+}
+
+.links-container  {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  transition: transform .3s;
+}
+
+.nav-link:hover {
+  transform: scale(0.9);
+}
+
+/* Component Welcome */
+
+.welcome-container {
+  min-height: 80dvh;
+  padding: 4rem 2rem;
+  background-image: 
+    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+    url(/hero.webp);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: clamp(1.5rem, 5vw, 3rem);
+  gap: 2rem;
+  position: relative;
+}
+
+.welcome-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 20, 40, 0) 0%,
+    #01142c 100%
+  );
+}
+
+.welcome-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+.welcome-info h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.welcome-info p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.marked-span {
+  font-weight: 600;
+  color: orange;
+}
+
+.welcome-button {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 10px 40px 10px 40px;
+  border: none;
+  transition: background-color .3s, transform .3s ease;
+  font-weight: bold;
+}
+
+.welcome-button:hover {
+  background-color: rgb(255, 217, 0);
+  transform: scale(1.10);
+}
+
+.welcome-arrow {
+  user-select: none;
+  color: rgb(255, 217, 0);
+  font-size: 2rem;
+}
+
+/* Courses Components */
+
+.courses-container {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.courses-container h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.courses-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  align-items: stretch;
+  place-content: center;
+  width: 70%;
+  margin: auto;
+}
+
+.course-card {
+  background-color: rgb(5, 22, 48);
+  border: 1px solid rgb(5, 31, 70);
+  border-radius: 20px;
+  box-shadow: 
+    0 1px 2px rgba(0, 0, 0, 0.08),
+    0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1rem 2rem;
+  height: 100%;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, .5fr);
+  /*place-items: center; */
+  width: 80%; 
+  margin: auto;
+  min-width: 400px;
+  transition: filter .5s ease;
+}
+
+.course-card:hover {
+  filter: brightness(1.1);
+}
+
+.course-info {
+  grid-column: 1 / 3;
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.course-info p {
+  color: gray;
+}
+
+.course-info small {
+  color: #48e;
+  font-weight: bold;
+}
+
+.course-btn {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color .2s ease, border-color .2s ease;
+  color: #fff;
+  width: 100px;
+  margin: auto;
+}
+
+.course-not-apply {
+  background-color: rgb(10, 49, 109);
+  border: 1px solid rgb(22, 64, 128);
+}
+
+.course-not-apply:hover {
+  border-color: #fff;
+  background-color: rgb(21, 74, 154);
+}
+
+.course-apply {
+  background-color: rgb(0, 99, 0);
+  border: 1px solid rgb(0, 134, 0);
+  opacity: 0.5;
+}
+
+.course-price {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  font-weight: bold;
+  color: green;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+.course-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.course-header h3 {
+  font-size: 1.4rem;
+}
+
+.badge {
+  padding: .1rem .6rem 0;
+  border-radius: 50px;
+}
+
+.yellow-badge {
+  background-color: rgb(255, 196, 0);
+  color: #222;
+}
+
+.green-badge {
+  background-color: green;
+  color: #fff;
+}
+
+.red-badge {
+  background-color: rgb(117, 0, 0);
+  color: #fff;
+}
+
+.gray-badge {
+  background-color: gray;
+  color: #fff;
+}
+
+
+
+/* Certificate Section */
+
+.certificate-section {
+  padding: 10rem 6rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  margin: auto;
+  max-width: 1700px;
+}
+
+.certificate-wrapper {
+  position: relative;
+}
+
+.certificate-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 20, 40, 0) 0%,
+    #001620 100%
+  );
+}
+
+.certificate-section div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.certificate-section div h3 {
+  font-size: 2.8rem;
+}
+
+.certificate-section div p {
+  font-size: 1.2rem;
+}
+
+.certificate-section img {
+  width: 35%;
+  min-width: 550px;
+  border: 1px solid rgb(4, 39, 92);
+  border-radius: 50px;
+}
+
+.reviews-section {
+  background-color: #001620;
+  padding: 8rem 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.reviews-section__title{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  place-content: center;
+  width: 60%;
+  margin: auto;
+  align-items: stretch;
+  gap: 2rem;
+}
+
+.review-card {
+  border: 1px solid #00202f;
+  background-color: #001a26;
+  padding: 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.review-card__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.review-card__avatar {
+  border-radius: 50%;
+  width: 80px;
+}
+
+.review-card__user {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
+
+.review-card__user h4 {
+  font-size: 1.5rem;
+}
+
+.review-card__user small {
+  color: gray;
+}
+
+.review-card__review {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.review-card__course {
+  color: orange;
+  font-size: 1rem;
+}
+
+.job-section {
+  background-color: #001620;
+  position: relative;
+}
+
+.job-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(
+    to bottom,
+    #001620 0%,
+    #000f15 100%
+  );
+}
+
+
+.job-section-wrapper {
+  padding: 8rem 6rem 15rem 6rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 80%;
+}
+
+.job-section__video {
+  width: 540px
+}
+
+.job-section__description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 40%;
+}
+
+.job-section__description h4 {
+  font-size: 2rem;
+}
+
+.job-section__description p {
+  font-size: 1.2rem;
+}
+
+.faq-section {
+  background-color: #000f15;
+  position: relative;
+}
+
+.faq-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(
+    to bottom,
+    #000f15 0%,
+    #0c0c0c 100%
+  );
+}
+
+.faq-section-wrapper {
+  padding: 8rem 6rem 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+
+.faq-section__header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.faq-section__header h2 {
+  font-size: 3rem;
+}
+
+.faq-question {
+  background-color: #111;
+  margin: auto;
+  border-top: 1px solid #222;
+  border-left: 1px solid #222;
+  border-right: 1px solid #222;
+  cursor: pointer;
+  max-height: 34px;
+  transition: max-height 2s;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.faq-question:first-child {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.faq-question:last-child {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.faq-question {
+  border-bottom: 1px solid #222; 
+}
+
+
+
+.faq-question[open] {
+  color: orange;
+  max-height: 400px;
+}
+
+.faq-content {
+  margin-top: 1rem;
+}
+
+.faq-question[open] .faq-content {
+  color: #fff;
+  animation: aparecer 1s .3s both;
+}
+
+.faq-section__container {
+  width: 100%;
+  max-width: 600px;
+  min-width: 400px;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    translate: 0 -20px;
+  } 50% {
+  } to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+.footer {
+  background-color: #0c0c0c;
+  padding: 2rem;
+}
+
+/* Media Queries */
+
+
+@media screen and (width < 1000px) {
+  .courses-list {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .certificate-section {
+    gap: 1.5rem;
+  }
+
+  .certificate-section div h3 {
+    font-size: 1.8rem;
+  }
+
+  .certificate-section div p {
+    font-size: .9rem;
+  }
+
+  .certificate-section img {
+    width: 35%;
+    min-width: 375px
+  }
+
+  /* Review Component */
+
+  .reviews-container {
+    grid-template-columns: 1fr;
+    width: 70%;
+  }
+
+  .review-card {
+    min-width: 430px;
+  }
+
+  /* Job Section Component */
+
+  .job-section-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2rem 8rem;
+  }
+
+  .job-section__description {
+    width: 100%;
+  }
+}
+
+@media screen and (width < 600px) {
+  /* Into Header Component */
+  .header {
+    padding: 1rem clamp(1.5rem, 8vw, 10rem) 1rem 1.5rem;
+  }
+
+  .logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .logo-container span {
+    font-size: 1rem;
+  }
+
+  .nav-link {
+    font-size: .8rem;
+  }
+
+  /* Welcome Component */
+  .welcome-info h1 {
+    font-size: 2.1rem;
+  }
+
+  .welcome-info p{
+    font-size: 1rem;
+    
+  }
+
+  /* Certificate Component */
+
+  .certificate-section {
+    flex-direction: column-reverse;
+  }
+
+  .certificate-section div {
+    width: 400px;
+  }
+
+  .certificate-section div h3 {
+    font-size: 1.5rem;
+  }
+
+  .certificate-section img {
+    min-width: 400px
+  }
+
+  /* Review Component */
+
+  .reviews-container {
+    grid-template-columns: 1fr;
+  }
+
+  .review-card {
+    min-width: 250px;
+  }
+
+  .reviews-section__title {
+    font-size: 2rem;
+    width: fit-content;
+    text-align: center;
+  }
+
+  /* Job Section */
+
+  .job-section__video {
+    width: 400px;
+  }
+
+  .job-section__description h4 {
+    font-size: 1.2rem;
+  }
+
+  .job-section__description p {
+    font-size: 1rem;
+  }
+
+  /* FAQ Component */
+
+  .faq-section__container {
+    width: 100%;
+    max-width: 400px;
+    min-width: 230px;
+  } 
+}
+
+
+@media screen and (width < 500px) {
+  .links-container {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .course-card {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: .5rem 1rem;
+    min-width: 275px
+  }
+
+  .course-header h3 {
+    font-size: 1rem;
+  }
+
+  .course-info p {
+    font-size: .8rem;
+  }
+
+  .course-btn {
+    grid-row: 3;
+    grid-column: 2 / 3;
+    padding: .4rem .6rem;
+    width: 75px;
+    font-size: .8rem;
+  }
+
+  .course-price {
+    grid-row: 3;
+    grid-column: 1 / 2;
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .badge {
+    font-size: .8rem;
+  }
+
+  .certificate-section div {
+    width: 300px;
+  }
+
+  .certificate-section div h3 {
+    font-size: 1.5rem;
+  }
+
+  .certificate-section img {
+    min-width: 300px
+  }
+
+  /* Job Section */
+
+  .job-section__video {
+    width: 300px;
+  }
+
+  .job-section__description h4 {
+    font-size: 1.2rem;
+  }
+
+  .job-section__description p {
+    font-size: 1rem;
+  }
+}
+
+

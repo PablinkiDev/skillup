@@ -1,0 +1,71 @@
+
+.formContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: max(450px, 50%);
+}
+
+.searchInputContainer {
+    display: flex;
+    align-items: center;
+    background-color: #18212d;
+    border: 1px solid #252e3b;
+    border-radius: .5rem;
+    width: 100%;
+    position: relative;
+    min-width: 450px;
+}
+
+.searchInputContainer label {
+    color: gray;
+    user-select: none;
+    position: absolute;
+    padding: 0 1rem;
+    cursor: text;
+}
+
+.searchInput {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    padding: 1rem 3rem;
+    color: #fff;
+
+    &::placeholder {
+        color: #575e6c;
+        font-weight: 600;
+    }
+}
+
+
+.selectInputContainer {
+    width: 100%;
+    display: flex;
+    gap: .5rem;
+}
+
+.selectInput {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 24 24' stroke-width='2' stroke='%23fff'><path stroke-linecap='round' stroke-linejoin='round' d='m19.5 8.25-7.5 7.5-7.5-7.5'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 0.625rem center;
+    padding: 0.625rem 1.25rem;
+    text-align: left;
+    cursor: pointer;
+    color: #fff;
+    background-color: #242d3a;
+    border: 1px solid #101922;
+    border-radius: 0.5rem;
+    appearance: none;
+    padding-right: 2.5rem;
+    transition: background-color .2s;
+    &:hover {
+        filter: brightness(1.4);
+    }
+    &:focus {
+        outline: 2px solid #1173d4;
+        outline-offset: 2px;
+  }  
+}

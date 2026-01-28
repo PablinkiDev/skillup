@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "nombre": "Fundamentos de Programación",
+      "precio": 12000,
+      "descripcion": "Aprendé las bases de la programación desde cero usando lógica, variables y estructuras de control.",
+      "nivel": "Inicial",
+      "duracionHoras": 40
+    },
+    {
+      "id": 2,
+      "nombre": "JavaScript desde Cero",
+      "precio": 18000,
+      "descripcion": "Curso completo de JavaScript moderno orientado al desarrollo web.",
+      "nivel": "Intermedio",
+      "duracionHoras": 55
+    },
+    {
+      "id": 3,
+      "nombre": "React para Principiantes",
+      "precio": 25000,
+      "descripcion": "Construí interfaces modernas aprendiendo componentes, props, estado y hooks.",
+      "nivel": "Intermedio",
+      "duracionHoras": 60
+    },
+    {
+      "id": 4,
+      "nombre": "Backend con Node.js y Express",
+      "precio": 30000,
+      "descripcion": "Desarrollo de APIs REST con Node.js, Express y buenas prácticas backend.",
+      "nivel": "Avanzado",
+      "duracionHoras": 70
+    },
+    {
+      "id": 5,
+      "nombre": "Bases de Datos con MySQL",
+      "precio": 20000,
+      "descripcion": "Modelado de datos, consultas SQL, relaciones y optimización de bases de datos.",
+      "nivel": "Intermedio",
+      "duracionHoras": 50
+    },
+    {
+      "id": 6,
+      "nombre": "Programación Orientada a Objetos",
+      "precio": 17000,
+      "descripcion": "Aprendé a crear aplicaciones organizadas usando clases y objetos, aplicando los principios básicos de la POO en Java.",
+      "nivel": "Intermedio",
+      "duracionHoras": 35
+    }
+]
