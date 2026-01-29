@@ -1,5 +1,5 @@
-import { Footer } from "./components/Footer.jsx";
-import { Header } from "./components/Header.jsx";
+import { Footer } from "./components/Footer/Footer.jsx";
+import { Header } from "./components/Header/Header.jsx";
 import { Error404Page } from "./pages/Error404Page/Error404Page.jsx";
 import { HomePage } from "./pages/HomePage/HomePage.jsx";
 import { JobsPage } from "./pages/JobsPage/JobsPage.jsx";

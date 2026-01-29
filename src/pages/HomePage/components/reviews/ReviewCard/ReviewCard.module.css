@@ -1,0 +1,59 @@
+
+
+.reviewCard {
+  border: 1px solid #00202f;
+  background-color: #001a26;
+  padding: 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.reviewCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.reviewCardAvatar {
+  border-radius: 50%;
+  width: 80px;
+}
+
+.reviewCardUser {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
+
+.reviewCardUser h4 {
+  font-size: 1.5rem;
+}
+
+.reviewCardUser small {
+  color: gray;
+}
+
+.reviewCardReview {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.reviewCardCourse {
+  color: orange;
+  font-size: 1rem;
+}
+
+@media screen and (width < 1000px) {
+  .reviewCard {
+    min-width: 430px;
+  }
+}
+
+@media screen and (width < 600px) {
+  .reviewCard {
+    min-width: 250px;
+  }
+}

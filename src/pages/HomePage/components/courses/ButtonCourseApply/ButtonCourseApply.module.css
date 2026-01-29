@@ -1,0 +1,28 @@
+.courseBtn {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color .2s ease, border-color .2s ease;
+  color: #fff;
+  width: 100px;
+  margin: auto;
+}
+
+.courseNotApply {
+  background-color: rgb(10, 49, 109);
+  border: 1px solid rgb(22, 64, 128);
+}
+
+.courseNotApply:hover {
+  border-color: #fff;
+  background-color: rgb(21, 74, 154);
+}
+
+.courseApply {
+  background-color: rgb(0, 99, 0);
+  border: 1px solid rgb(0, 134, 0);
+  opacity: 0.5;
+}

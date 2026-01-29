@@ -1,0 +1,11 @@
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem clamp(4rem, 8vw, 10rem) .5rem 4rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #021935;
+}

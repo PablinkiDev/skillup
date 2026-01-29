@@ -1,0 +1,104 @@
+
+.certificateSection {
+  padding: 10rem 6rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  margin: auto;
+  max-width: 1700px;
+}
+
+.certificateWrapper {
+  position: relative;
+}
+
+.certificateWrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 20, 40, 0) 0%,
+    #001620 100%
+  );
+}
+
+.certificateSection div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.certificateSection div h3 {
+  font-size: 2.8rem;
+}
+
+.certificateSection div p {
+  font-size: 1.2rem;
+}
+
+.certificateSection img {
+  width: 35%;
+  min-width: 550px;
+  border: 1px solid rgb(4, 39, 92);
+  border-radius: 50px;
+}
+
+@media screen and (width < 1000px) {
+  .certificateSection {
+    gap: 1.5rem;
+  }
+
+  .certificateSection div h3 {
+    font-size: 1.8rem;
+  }
+
+  .certificateSection div p {
+    font-size: .9rem;
+  }
+
+  .certificateSection img {
+    width: 35%;
+    min-width: 375px
+  }
+}
+
+@media screen and (width < 600px) {
+  /* Certificate Component */
+
+  .certificateSection {
+    flex-direction: column-reverse;
+  }
+
+  .certificateSection div {
+    width: 400px;
+  }
+
+  .certificateSection div h3 {
+    font-size: 1.5rem;
+  }
+
+  .certificateSection img {
+    min-width: 400px
+  }
+}
+
+@media screen and (width < 500px) {
+  .certificateSection div {
+    width: 300px;
+  }
+
+  .certificateSection div h3 {
+    font-size: 1.5rem;
+  }
+
+  .certificateSection img {
+    min-width: 300px;
+  }
+}

@@ -1,0 +1,84 @@
+/* Component Welcome */
+
+.welcomeContainer {
+  min-height: 80dvh;
+  padding: 4rem 2rem;
+  background-image: 
+    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+    url(/hero.webp);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: clamp(1.5rem, 5vw, 3rem);
+  gap: 2rem;
+  position: relative;
+}
+
+.welcomeContainer::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 20, 40, 0) 0%,
+    #01142c 100%
+  );
+}
+
+.welcomeInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+.welcomeInfo h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.welcomeInfo p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+
+.welcomeButton {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 10px 40px 10px 40px;
+  border: none;
+  transition: background-color .3s, transform .3s ease;
+  font-weight: bold;
+}
+
+.welcomeButton:hover {
+  background-color: rgb(255, 217, 0);
+  transform: scale(1.10);
+}
+
+.welcomeArrow {
+  user-select: none;
+  color: rgb(255, 217, 0);
+  font-size: 2rem;
+}
+
+@media screen and (width < 600px) {
+  /* Welcome Component */
+  .welcomeInfo h1 {
+    font-size: 2rem;
+  }
+
+  .welcomeInfo p{
+    font-size: 1rem;
+  }
+}

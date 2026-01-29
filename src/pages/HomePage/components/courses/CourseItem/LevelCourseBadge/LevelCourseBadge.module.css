@@ -1,0 +1,30 @@
+.badge {
+  padding: .1rem .6rem 0;
+  border-radius: 50px;
+}
+
+.yellowBadge {
+  background-color: rgb(255, 196, 0);
+  color: #222;
+}
+
+.greenBadge {
+  background-color: green;
+  color: #fff;
+}
+
+.redBadge {
+  background-color: rgb(117, 0, 0);
+  color: #fff;
+}
+
+.grayBadge {
+  background-color: gray;
+  color: #fff;
+}
+
+@media screen and (width < 500px) {
+  .badge {
+    font-size: .8rem;
+  }
+}

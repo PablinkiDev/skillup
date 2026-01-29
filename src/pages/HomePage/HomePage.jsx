@@ -1,4 +1,4 @@
-import { Welcome } from "./components/Welcome.jsx"
+import { Welcome } from "./components/Welcome/Welcome.jsx"
 import { Main } from "./components/Main.jsx"
 
 

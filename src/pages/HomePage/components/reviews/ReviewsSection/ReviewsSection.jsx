@@ -1,11 +1,12 @@
-import reviews from '../../../../data/reviews.json'
-import { ReviewCard } from './ReviewCard'
+import reviews from '../../../../../data/reviews.json'
+import { ReviewCard } from '../ReviewCard/ReviewCard'
+import styles from './ReviewsSection.module.css'
 
 export function ReviewsSection() {
     return (
-        <section className="reviews-section">
-            <h2 className='reviews-section__title'>¿Por qué <span className='marked-span'>elegir</span> a SkillUp para formarme?</h2>
-            <div className='reviews-container'>
+        <section className={styles.reviewsSection}>
+            <h2 className={styles.reviewsSectionTitle}>¿Por qué <span className='marked-span'>elegir</span> a SkillUp para formarme?</h2>
+            <div className={styles.reviewsContainer}>
                 { reviews.map(r => {
                     return (
                         <ReviewCard

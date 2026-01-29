@@ -1,7 +1,9 @@
+import styles from './CertificateSection.module.css'
+
 export function CertificateSection () {
     return (
-        <div className="certificate-wrapper">
-            <section className="certificate-section">
+        <div className={styles.certificateWrapper}>
+            <section className={styles.certificateSection}>
                 <img src="/certificate.webp" alt="" />
                 <div>
                     <h3 className="marked-span">Certificación profesional de alto nivel</h3>

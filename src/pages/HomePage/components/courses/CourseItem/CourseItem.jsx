@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { LevelCourseBadge } from './LevelCourseBadge';
-import { ButtonCourseApply } from './ButtonCourseApply';
-import Swal from 'sweetalert2'
+import { LevelCourseBadge } from './LevelCourseBadge/LevelCourseBadge';
+import { ButtonCourseApply } from '../ButtonCourseApply/ButtonCourseApply';
+import Swal from 'sweetalert2';
+import styles from './CourseItem.module.css'
 
 export function CourseItem({ nombre, nivel, descripcion, duracionHoras, precio }) {
     const [isApply, setIsApply] = useState(false);
@@ -35,9 +36,9 @@ export function CourseItem({ nombre, nivel, descripcion, duracionHoras, precio }
     }
 
     return (
-        <li className='course-card'>
-            <div className='course-info'>
-                <div className='course-header'>
+        <li className={styles.courseCard}>
+            <div className={styles.courseInfo}>
+                <div className={styles.courseHeader}>
                     <h3>{nombre}</h3>
                     <LevelCourseBadge nivel={nivel} />
                 </div>
@@ -45,7 +46,7 @@ export function CourseItem({ nombre, nivel, descripcion, duracionHoras, precio }
                 <small>{duracionHoras} horas</small>
             </div>
             <ButtonCourseApply isApply={isApply} onClick={handleApply} text={buttonText} />
-            <p className='course-price'>${precio} ARS</p>
+            <p className={styles.coursePrice}>${precio} ARS</p>
         </li>
     )
 }

@@ -1,0 +1,53 @@
+.faqSection {
+  background-color: #000f15;
+  position: relative;
+}
+
+.faqSection::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(
+    to bottom,
+    #000f15 0%,
+    #0c0c0c 100%
+  );
+}
+
+.faqSectionWrapper {
+  padding: 8rem 6rem 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+
+.faqSectionHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.faqSectionHeader h2 {
+  font-size: 3rem;
+}
+
+.faqSectionContainer {
+  width: 100%;
+  max-width: 600px;
+  min-width: 400px;
+}
+
+
+@media screen and (width < 600px) {
+  .faqSectionContainer {
+    width: 100%;
+    max-width: 400px;
+    min-width: 230px;
+  } 
+}
