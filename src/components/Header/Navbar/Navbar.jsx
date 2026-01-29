@@ -1,14 +1,24 @@
 import styles from './Navbar.module.css'
+import { Link } from '../../Link/Link.jsx'
+import { MobileMenu } from './MobileMenu/MobileMenu.jsx'
+import { useState } from 'react'
 
 export function Navbar() {
+    const [isOpen, setIsOpen] = useState(false)
+
+    const toggleOpenMenu = () => {
+        setIsOpen(prev => !prev);
+    }
+
     return (
-        <nav className="nav">
+        <nav className={styles.nav}>
             <div className={styles.linksContainer}>
-                <a className={styles.navLink} href="/">Formación</a>
-                <a className={styles.navLink} href="/empleos">Empleos</a>
-                <a className={styles.navLink} href="/#faq">FAQ</a>
+                <Link className={styles.navLink} href="/">Home</Link>
+                <Link className={styles.navLink} href="/empleos">Empleos</Link>
             </div>
-            <span className={`${styles.menuBtn} material-symbols-outlined`}>menu</span>
+            <span onClick={toggleOpenMenu} className={`${styles.menuBtn} material-symbols-outlined`}>menu</span>
+            { isOpen && <MobileMenu /> }
         </nav>
+        
     )
 }
