@@ -21,19 +21,17 @@
   .navLink {
     font-size: .8rem;
   }
-}
-
-@media screen and (width < 500px) {
   .nav {
     position: relative;
   }
-
+  
   .linksContainer {
     display: none;
   }
-
+  
   .menuBtn {
     display: block;
     cursor: pointer;
   }
 }
+

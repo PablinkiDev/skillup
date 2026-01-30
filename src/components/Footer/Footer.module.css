@@ -2,4 +2,19 @@
 .footer {
   background-color: #0c0c0c;
   padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.github {
+  cursor: pointer;
+  transition: transform .2s ease, fill .3s ease;
+  fill: #fff;
+
+  &:hover {
+    transform: scale(1.2);
+    fill: orange;
+  }
 }
