@@ -1,25 +1,12 @@
-import { useEffect } from "react";
+import { useRouter } from "./hooks/useRouter.js";
 import { Footer } from "./components/Footer/Footer.jsx";
 import { Header } from "./components/Header/Header.jsx";
 import { Error404Page } from "./pages/Error404Page/Error404Page.jsx";
 import { HomePage } from "./pages/HomePage/HomePage.jsx";
 import { JobsPage } from "./pages/JobsPage/JobsPage.jsx";
-import { useState } from "react";
 
 function App() {
-  const [path, setPath] = useState(window.location.pathname);
-
-  useEffect(() => {
-    const handleLocationChange = () => {
-      setPath(window.location.pathname);
-    }
-
-    window.addEventListener('popstate', handleLocationChange);
-
-    return () => {
-      window.removeEventListener('popstate', handleLocationChange)
-    }
-  }, [])
+  const { path } = useRouter()
 
   return (
     <div className="app-layout">

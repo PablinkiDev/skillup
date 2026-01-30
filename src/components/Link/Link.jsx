@@ -1,15 +1,15 @@
-export function Link({children, href, onClose, ...restProps}) {
+import { useRouter } from "../../hooks/useRouter";
+
+export function Link({children, href, onClose, ...restOfProps}) {
+    const { navigateTo } = useRouter();
+
     const handleNavigate = (event) => {
         event.preventDefault();
 
-        if (typeof onClose === "function") onClose();
-        
-        history.pushState({}, '', href);
-        window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+        if (typeof onClose === "function") onClose(); // Close Menu Mobile
 
-        const navigationEvent = new PopStateEvent('popstate');
-        window.dispatchEvent(navigationEvent)
+        navigateTo(href)
     }
 
-    return <a href={href} {...restProps} onClick={handleNavigate}>{children}</a>
+    return <a href={href} {...restOfProps} onClick={handleNavigate}>{children}</a>
 }
