@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
 export function useRouter() {
-    const [path, setPath] = useState(window.location.pathname);
+    const [currentPath, setCurrentPath] = useState(window.location.pathname);
     
     useEffect(() => {
         const handleLocationChange = () => {
-            setPath(window.location.pathname);
+            setCurrentPath(window.location.pathname);
         }  
         window.addEventListener('popstate', handleLocationChange);
     
@@ -22,5 +22,5 @@ export function useRouter() {
 
 
 
-    return { path, navigateTo }
+    return { currentPath, navigateTo }
 }

@@ -1,0 +1,124 @@
+
+.container {
+    background-color: #001620;
+    padding: 6rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header h2 {
+    font-size: 3rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+.form {
+    width: 40%;
+    min-width: 430px;
+}
+
+.inputContainer {
+    background-color: #1e293b;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    box-shadow:
+        0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.inputContainer label {
+    display: flex;
+    margin: 1rem;
+    cursor: text;
+    left: 0;
+    position: absolute;
+}
+
+.inputContainer label svg {
+    color: #666966;
+}
+
+.inputContainer input {
+  width: 100%;
+  border: none;
+  color: #fff;
+  padding: 1rem 3rem;
+  background-color: transparent;
+  border-radius: .5rem;
+
+  outline: none;
+
+  /* Estado normal */
+  box-shadow:
+    0 0 0 0 rgba(1, 20, 44, 1),   /* hueco (gap) */
+    0 0 0 0 rgba(17, 115, 212, 0); /* aro */
+
+  transition: box-shadow .2s ease;
+}
+
+.inputContainer input:focus-visible {
+    /* 2px de aro y 4px de offset => 2 + 4 = 6 */
+    box-shadow:
+        0 0 0 4px rgba(1, 20, 44, 1),  /* “offset”: hueco */
+        0 0 0 6px rgba(17, 115, 212, 1); /* “outline”: aro */
+}
+
+.btnSearch {
+    background-color: #1173d4;
+    color: #fff;
+    font-weight: bold;
+    margin: .3rem;
+    position: absolute;
+    right: 0;
+    padding: .6rem 1rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+
+    box-shadow:
+        0 0 0 0 rgba(1, 20, 44, 1),   
+        0 0 0 0 rgba(17, 115, 212, 0); 
+
+    transition: box-shadow .2s ease;
+
+    &:hover {
+        box-shadow:
+            0 0 0 3px rgba(1, 20, 44, 1), 
+            0 0 0 5px rgba(17, 115, 212, 1); 
+    }
+}
+
+@media screen and (width < 500px) {
+    .header h2 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .form {
+        min-width: 280px;
+    }
+
+    .btnSearch {
+        padding: .6rem .5rem;
+    }
+}

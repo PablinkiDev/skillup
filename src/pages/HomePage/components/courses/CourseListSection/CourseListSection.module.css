@@ -1,5 +1,5 @@
 .coursesContainer {
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -7,7 +7,7 @@
 
 .coursesContainer h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .coursesList {
@@ -20,9 +20,16 @@
   margin: auto;
 }
 
+
 @media screen and (width < 1000px) {
   .coursesList {
     grid-template-columns: 1fr;
     gap: 4rem;
+  }
+}
+
+@media screen and (width < 600px) {
+  .coursesContainer h2 {
+    font-size: 2rem;
   }
 }

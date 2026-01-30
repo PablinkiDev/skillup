@@ -10,7 +10,7 @@ export function JobSection () {
                 </video>
                 <div className={styles.jobSectionDescription}>
                     <h4>Accedé a nuestra <span className="marked-span">bolsa de trabajo exclusiva</span></h4>
-                    <p>Te acompañamos en tu desarrollo profesional desde el primer día, brindándote acceso a oportunidades laborales reales, orientación personalizada y contacto directo con empresas que buscan nuevos talentos en tecnología. Nuestro objetivo es ayudarte a dar el salto al mundo laboral con mayor seguridad y preparación.</p>
+                    <p className='description'>Te acompañamos en tu desarrollo profesional desde el primer día, brindándote acceso a oportunidades laborales reales, orientación personalizada y contacto directo con empresas que buscan nuevos talentos en tecnología. Nuestro objetivo es ayudarte a dar el salto al mundo laboral con mayor seguridad y preparación.</p>
                 </div>
             </div>
         </section>

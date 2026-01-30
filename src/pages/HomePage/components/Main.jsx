@@ -1,3 +1,4 @@
+import { SearchJob } from "./SearchJob/SearchJob.jsx"
 import { CertificateSection } from "./CertificateSection/CertificateSection.jsx"
 import { CourseListSection } from "./courses/CourseListSection/CourseListSection.jsx"
 import { FaqSection } from "./faq/FaqSection/FaqSection.jsx"
@@ -10,6 +11,7 @@ export function Main() {
             <CourseListSection />
             <CertificateSection />
             <ReviewsSection />
+            <SearchJob />
             <JobSection />
             <FaqSection />
         </main>

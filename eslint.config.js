@@ -24,6 +24,8 @@ export default defineConfig([
     },
     rules: {
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      // Hace que ESLint cuente <Component /> como "uso"
+      'react/jsx-uses-vars': 'error',
     },
   },
 ])

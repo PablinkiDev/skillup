@@ -12,7 +12,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, .5fr);
-  /*place-items: center; */
   width: 80%; 
   margin: auto;
   min-width: 400px;
@@ -72,14 +71,6 @@
   }
 
   .courseInfo p {
-    font-size: .8rem;
-  }
-
-  .courseBtn {
-    grid-row: 3;
-    grid-column: 2 / 3;
-    padding: .4rem .6rem;
-    width: 75px;
     font-size: .8rem;
   }
 

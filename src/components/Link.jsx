@@ -1,4 +1,4 @@
-import { useRouter } from "../../hooks/useRouter";
+import { useRouter } from "../hooks/useRouter";
 
 export function Link({children, href, onClose, ...restOfProps}) {
     const { navigateTo } = useRouter();
@@ -8,7 +8,7 @@ export function Link({children, href, onClose, ...restOfProps}) {
 
         if (typeof onClose === "function") onClose(); // Close Menu Mobile
 
-        navigateTo(href)
+        navigateTo(href);
     }
 
     return <a href={href} {...restOfProps} onClick={handleNavigate}>{children}</a>

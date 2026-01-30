@@ -7,7 +7,7 @@ export function CertificateSection () {
                 <img src="/certificate.webp" alt="" />
                 <div>
                     <h3 className="marked-span">Certificación profesional de alto nivel</h3>
-                    <p>Nuestros certificados están diseñados bajo estándares profesionales y respaldados por contenidos actualizados, proyectos reales y una formación práctica que te prepara para el mundo laboral al nivel de las mejores instituciones.</p>
+                    <p className='description'>Nuestros certificados están diseñados bajo estándares profesionales y respaldados por contenidos actualizados, proyectos reales y una formación práctica que te prepara para el mundo laboral al nivel de las mejores instituciones.</p>
                 </div>
             </section>
         </div>
