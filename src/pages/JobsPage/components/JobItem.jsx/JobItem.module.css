@@ -40,3 +40,12 @@
 .jobHeader small {
     color: gray;
 }
+
+@media screen and (width < 500px) {
+    .listItem {
+        display: grid;
+        border: 2px solid #1e2733;
+        border-radius: .5rem;
+        box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+    }
+}

@@ -23,3 +23,16 @@
     color: gray;
 }
 
+@media screen and (width < 500px) {
+    .main {
+        padding: 2rem 1rem;
+    }
+
+    .jobsHeader h1 {
+        font-size: 1.5rem;
+    }
+
+    .jobsHeader p {
+        font-size: .9rem;
+    }
+}
