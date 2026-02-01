@@ -1,3 +1,8 @@
+:root {
+  --main-bg-color: #101922;
+  --btn-bg-primary: #1173d4;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +13,7 @@
 }
 
 body {
-  background-color: #01142c;
+  background-color: var(--main-bg-color);
   color: #fff;
 }
 

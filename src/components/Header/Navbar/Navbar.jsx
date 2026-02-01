@@ -12,6 +12,7 @@ export function Navbar() {
             <div className={styles.linksContainer}>
                 <Link className={styles.navLink} href="/">Home</Link>
                 <Link className={styles.navLink} href="/empleos">Empleos</Link>
+                <Link className={styles.navLink} href="/contacto">Contacto</Link>
                 <Link className={styles.navLink} href="/test">Test</Link>
             </div>
             { isOpen ? <span onClick={toggleMenu} className={`${styles.menuBtn} material-symbols-outlined`}>close</span>

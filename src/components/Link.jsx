@@ -1,7 +1,8 @@
 import { useRouter } from "../hooks/useRouter";
+import styles from './Link.module.css'
 
-export function Link({children, href, onClose, ...restOfProps}) {
-    const { navigateTo } = useRouter();
+export function Link({children, href, onClose, isLogo, className = "", ...restOfProps}) {
+    const { navigateTo, currentPath } = useRouter();
 
     const handleNavigate = (event) => {
         event.preventDefault();
@@ -11,5 +12,16 @@ export function Link({children, href, onClose, ...restOfProps}) {
         navigateTo(href);
     }
 
-    return <a href={href} {...restOfProps} onClick={handleNavigate}>{children}</a>
+    const isActive = currentPath === href && !isLogo;
+
+    return (
+        <a 
+            href={href} 
+            onClick={handleNavigate}
+            className={`${className} ${isActive ? `${styles.active}` : ''}`}
+            {...restOfProps} 
+        >
+            {children}
+        </a>
+    )
 }

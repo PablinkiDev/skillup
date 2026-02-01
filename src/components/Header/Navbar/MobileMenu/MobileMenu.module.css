@@ -1,7 +1,7 @@
 
 .mobileMenu {
     z-index: 10;
-    background-color: rgba(3, 32, 67, 0.954);
+    background-color: #212b36bb;
     padding: 1rem;
     display: flex;
     flex-direction: column;

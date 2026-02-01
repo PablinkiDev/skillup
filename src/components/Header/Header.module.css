@@ -7,5 +7,6 @@
   position: sticky;
   top: 0;
   z-index: 10;
-  background-color: #021935;
+  background-color: #101922;
+  border-bottom: 2px solid #212b36;
 }
