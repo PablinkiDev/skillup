@@ -21,6 +21,7 @@ export function JobsPage() {
 
     const handleFilter = (filters) => {
         setFilter(filters)
+        setCurrentPage(1);
     }
 
     return (

@@ -1,15 +1,38 @@
 import styles from './JobItem.module.css'
 import { ButtonApply } from '../ButtonApply/ButtonApply'
-import { useState } from 'react'
+import { useState } from 'react';
+import Swal from 'sweetalert2';
 
 export function JobItem({ job }) {
-    const [apply, setApply] = useState(false)
+    const [isApply, setIsApply] = useState(false)
 
     const handleApply = () => {
-        setApply(prev => !prev);
+        Swal.fire({
+                    background: '#01142c',
+                    color: '#fff',
+                    title: "¿Estas seguro?",
+                    text: `Te vas a inscribir al puesto de "${job.titulo}" para la empresa "${job.empresa}"`,
+                    icon: "question",
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Si, inscribirme",
+                    cancelButtonText: 'No, gracias'
+                }).then((result) => {
+                if (result.isConfirmed) {
+                    setIsApply(true)
+                    Swal.fire({
+                        title: "Inscripto!",
+                        text: "Te enviaremos toda la información por email",
+                        icon: "success",
+                        background: '#01142c',
+                        color: '#fff'
+                    });
+                }
+            });
     }
 
-    const btnText = apply ? 'Aplicado' : 'Aplicar';
+    const btnText = isApply ? 'Aplicado' : 'Aplicar';
 
     return (
         <li className={styles.listItem}>
@@ -20,7 +43,7 @@ export function JobItem({ job }) {
                 </div>
                 <p>{job.descripcion}</p>
             </div>
-            <ButtonApply text={btnText} onClick={handleApply} apply={apply} />
+            <ButtonApply text={btnText} onClick={handleApply} apply={isApply} />
         </li>
     )
 }

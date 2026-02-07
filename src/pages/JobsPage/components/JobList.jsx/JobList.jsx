@@ -12,14 +12,14 @@ export function JobList({ currentPage, searchFilter, onPageChange, filters }) {
 
     const params = new URLSearchParams();
 
-    if (searchFilter) params.append('text', searchFilter)
+    if (searchFilter) params.append('text', searchFilter);
     if (filters.technology) params.append('technology', filters.technology);
     if (filters.mode) params.append('type', filters.mode);
-    if (filters.level) params.append('level', filters.level)
+    if (filters.level) params.append('level', filters.level);
     
     const offset = (currentPage - 1) * TOTAL_PER_PAGE;
-    params.append('offset', offset)
-    params.append('limit', TOTAL_PER_PAGE)
+    params.append('offset', offset);
+    params.append('limit', TOTAL_PER_PAGE);
     
     const queryParams = params.toString();
     
