@@ -15,8 +15,8 @@ export function JobItem({ job }) {
         <li className={styles.listItem}>
             <div className={styles.jobContainer}>
                 <div className={styles.jobHeader}>
-                    <h2>{job.nombre}</h2>
-                    <small>{job.empresa} | {job.modalidad}</small>
+                    <h2>{job.titulo}</h2>
+                    <small>{job.empresa} | {job.data.modalidad}</small>
                 </div>
                 <p>{job.descripcion}</p>
             </div>
