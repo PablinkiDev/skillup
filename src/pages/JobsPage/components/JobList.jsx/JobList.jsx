@@ -3,12 +3,14 @@ import { useEffect, useState } from 'react';
 import { JobItem } from '../JobItem.jsx/JobItem'
 import { Pagination } from '../Pagination/Pagination'
 import styles from './JobList.module.css'
+import { Spinner } from '../../../../components/Spinner/Spinner';
 
 export function JobList({ currentPage, searchFilter, onPageChange, filters }) {
     const TOTAL_PER_PAGE = 5;
     const [jobs, setJobs] = useState([]);
     const [totalJobs, setTotalJobs] = useState(0);
     const [loading, setLoading] = useState(false);
+
 
     const params = new URLSearchParams();
 
@@ -48,7 +50,7 @@ export function JobList({ currentPage, searchFilter, onPageChange, filters }) {
     return (
         <>  
             {
-                loading ? <p>Cargando trabajos</p> : (
+                loading ? <Spinner /> : (
                     <>
                         {
                             jobs.length === 0 ? <p>No hay empleos que cumplan con los criterios de busqueda</p> : (

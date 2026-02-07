@@ -1,7 +1,7 @@
 import styles from './JobForm.module.css'
 import { useId } from 'react'
 
-export function JobForm({ onChangeSearch, onChangeFilter }) {
+export function JobForm({ onChangeSearch, onChangeFilter, haveFilters, onResetFilter }) {
     const idSearch = useId();
     const idTechnology = useId();
     const idMode = useId();
@@ -89,6 +89,9 @@ export function JobForm({ onChangeSearch, onChangeFilter }) {
                     <option value="senior">Senior</option>
                 </select>
             </div>
+            {
+                haveFilters && <button className={styles.btnReset} onClick={onResetFilter}>Reiniciar filtros</button>
+            }
         </form>
     )
 }

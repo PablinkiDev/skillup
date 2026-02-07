@@ -1,0 +1,19 @@
+.spinner {
+    border-radius: 50%;
+    border-top: 4px solid var(--btn-bg-primary);
+    border-bottom: 4px solid var(--btn-bg-primary);
+    border-right: 4px solid var(--main-bg-color);
+    border-left: 4px solid var(--btn-bg-primary);
+    width: 40px;
+    height: 40px;
+    animation: rotar 1s linear infinite;
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotate(0);
+    } 100% {
+        transform: rotate(360deg);
+    }
+    
+}

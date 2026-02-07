@@ -51,16 +51,16 @@
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 24 24' stroke-width='2' stroke='%23fff'><path stroke-linecap='round' stroke-linejoin='round' d='m19.5 8.25-7.5 7.5-7.5-7.5'/></svg>");
     background-repeat: no-repeat;
     background-position: right 0.625rem center;
-    padding: 0.625rem 1.25rem;
     text-align: left;
     cursor: pointer;
     color: #fff;
+    padding: 0.625rem 1.25rem;
     background-color: #242d3a;
     border: 1px solid #101922;
     border-radius: 0.5rem;
     appearance: none;
     padding-right: 2.5rem;
-    transition: background-color .2s;
+    transition: filter .2s;
     &:hover {
         filter: brightness(1.4);
     }
@@ -70,6 +70,20 @@
   }  
 }
 
+
+.btnReset {
+    cursor: pointer;
+    color: #fff;
+    padding: 0.625rem 1.25rem;
+    background-color: #242d3a;
+    border: 1px solid #101922;
+    border-radius: .5rem;
+    margin: 0 auto 0 0;
+    transition: filter .2s;
+    &:hover {
+        filter: brightness(1.4);
+    }
+}
 
 
 
@@ -101,5 +115,9 @@
     .selectInput {
         text-align: left;
         width: 260px;
+    }
+
+    .btnReset {
+        margin: auto;
     }
 }
